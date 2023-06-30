@@ -1,0 +1,26 @@
+.accordion {
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+  max-height: 35rem;
+}
+
+.card {
+  width: 16rem;
+  max-height: 25rem;
+  min-height: 0rem;
+  padding: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: left;
+}
+
+h3 {
+  max-width: 16rem;
+}

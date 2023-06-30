@@ -6,9 +6,59 @@
   --ss-dark: #9e6b85;
   --ss-darker: #5f4c67;
   --ss-darkest: #28202b;
+
+  font-family: "Niramit", sans-serif;
+
+  /* use just weight 300 and 200 to normal font
+      200 to italic 
+      700 to bold and bold italic*/
+
+  font-weight: 300;
+
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
   background-color: var(--ss-darkest);
   color: var(--ss-lightest);
+  margin: 0px;
+  padding: 0px;
+}
+
+.actionButton {
+  background-color: var(--ss-main);
+  color: black;
+  border: none;
+  border-radius: 5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  transition: all 1s;
+}
+
+.actionButton:hover {
+  background-color: var(--ss-light);
+  color: var(--ss-darkest);
+  scale: 1.1;
+  box-shadow: 0 0 0.66rem var(--ss-darker);
+  transition: all 0.06s;
+}
+
+.card {
+  background-color: var(--ss-darker);
+  font-size: 1.4ch;
+  margin-top: 1.5rem;
+  margin-left: 0rem;
+}
+/* border: 1px solid red; */
+
+.card > h3 {
+  font-weight: 800;
+  font-size: 2ch;
+}
+
+.welcomeSection {
+  border: 1px solid var(--ss-dark);
 }
