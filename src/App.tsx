@@ -7,18 +7,18 @@ export default function App() {
       <section className="welcomeSection">
         <Accordion title="More Information">
           <h3>Ofertas en tendencia</h3>
-          <p>Holaaa</p>
+          <p>Audífonos Gamer y Accesorios para Consolas</p>
         </Accordion>
         <Accordion title="More Information">
           <h3>Ofertas en salud</h3>
-          <p>Holaaa</p>
+          <p>Oferta en serums, cremas faciales y fibras capilares</p>
         </Accordion>
         <Accordion title="More Information">
           <h3>Descuentos en tecnologia</h3>
-          <p>Holaaa</p>
+          <p>Electrónica, Cámaras, Fotografía y más</p>
         </Accordion>
         <Accordion title="Inicia sesión para vivir tu mejor experiencia">
-          <p></p>
+          <p>Promoción pagada</p>
         </Accordion>
       </section>
     </div>

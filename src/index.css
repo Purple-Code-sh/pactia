@@ -58,7 +58,3 @@ body {
   font-weight: 800;
   font-size: 2ch;
 }
-
-.welcomeSection {
-  border: 1px solid var(--ss-dark);
-}
