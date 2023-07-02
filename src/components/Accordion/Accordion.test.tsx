@@ -9,7 +9,9 @@ describe("Accordion", () => {
     render(
       <Accordion title="shm-A">
         <h4 role="sectionHeader">Subtitle</h4>
-        <span>Some other content</span>
+        <div className="toBottom">
+          <span>Some other content</span>
+        </div>
       </Accordion>
     );
   });
@@ -40,5 +42,6 @@ describe("Accordion", () => {
     const button = screen.getByText("Open");
     fireEvent.click(button);
     expect(screen.getByRole("sectionHeader"));
+    expect(screen.queryByText("toBottom"));
   });
 });
