@@ -8,10 +8,11 @@ describe("Accordion", () => {
   beforeEach(() => {
     render(
       <Accordion title="shm-A">
-        <h4 role="sectionHeader">Subtitle</h4>
+        <h3 role="sectionHeader">Subtitle</h3>
         <div className="toGrow">
-          <span>Some other content</span>
+          <div className="fromGrow">box with flexible height</div>
         </div>
+        <p>Audífonos Gamer y Accesorios para Consolas</p>
       </Accordion>
     );
   });
