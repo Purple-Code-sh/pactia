@@ -6,25 +6,33 @@ export default function App() {
     <div>
       <section className="welcomeSection">
         <Accordion title="More Information">
-          <h3>Ofertas en tendencia</h3>
+          <h3 className="sectionHeader">Ofertas en tendencia</h3>
           <div className="toGrow">
             <div className="fromGrow">box with flexible height</div>
           </div>
-          <p>Audífonos Gamer y Accesorios para Consolas</p>
+          <div className="articleDescription">
+            <p>Audífonos Gamer y Accesorios para Consolas</p>
+          </div>
         </Accordion>
 
         <Accordion title="More Information">
           <h3>Ofertas en salud</h3>
-          <p>Oferta en serums, cremas faciales y fibras capilares</p>
+          <div className="articleDescription">
+            <p>Oferta en serums, cremas faciales y fibras capilares</p>
+          </div>
         </Accordion>
 
         <Accordion title="More Information">
           <h3>Descuentos en tecnologia</h3>
-          <p>Electrónica, Cámaras, Fotografía y más</p>
+          <div className="articleDescription">
+            <p>Electrónica, Cámaras, Fotografía y más</p>
+          </div>
         </Accordion>
 
         <Accordion title="Inicia sesión para vivir tu mejor experiencia">
-          <p>Promoción pagada</p>
+          <div className="articleDescription">
+            <p>Promoción pagada</p>
+          </div>
         </Accordion>
       </section>
     </div>

@@ -22,11 +22,10 @@
   height: 7rem;
 }
 
-h3 {
+.sectionHeader {
   max-width: 15rem;
-}
-
-h4 {
+  font-weight: 800;
+  font-size: 2ch;
 }
 
 .toGrow {

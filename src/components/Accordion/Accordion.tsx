@@ -8,7 +8,7 @@ type AccordionProps = {
 };
 
 export default function Accordion({ title, children }: AccordionProps) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className="accordion">
