@@ -28,7 +28,7 @@ body {
 
 .actionButton {
   background-color: var(--ss-main);
-  color: black;
+  color: var(--ss-darkest);
   border: none;
   border-radius: 5rem;
   padding-left: 1.2rem;
@@ -40,7 +40,7 @@ body {
 
 .actionButton:hover {
   background-color: var(--ss-light);
-  color: var(--ss-darkest);
+  color: black;
   scale: 1.1;
   box-shadow: 0 0 0.66rem var(--ss-darker);
   transition: all 0.06s;

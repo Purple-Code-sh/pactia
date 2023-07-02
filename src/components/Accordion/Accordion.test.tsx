@@ -8,7 +8,7 @@ describe("Accordion", () => {
   beforeEach(() => {
     render(
       <Accordion title="shm-A">
-        <h4>Subtitle</h4>
+        <h4 role="sectionHeader">Subtitle</h4>
         <span>Some other content</span>
       </Accordion>
     );
@@ -34,5 +34,11 @@ describe("Accordion", () => {
     fireEvent.click(button);
     fireEvent.click(button);
     expect(screen.queryByText(/subtitle/i)).toBeNull();
+  });
+
+  test("children should have an h4 and a class toBottom", () => {
+    const button = screen.getByText("Open");
+    fireEvent.click(button);
+    expect(screen.getByRole("sectionHeader"));
   });
 });
