@@ -12,7 +12,9 @@ describe("Accordion", () => {
         <div className="toGrow">
           <div className="fromGrow">box with flexible height</div>
         </div>
-        <p>Audífonos Gamer y Accesorios para Consolas</p>
+        <div role="articleDescription">
+          <p>First description paragraph</p>
+        </div>
       </Accordion>
     );
   });
@@ -32,17 +34,23 @@ describe("Accordion", () => {
     expect(screen.queryByText(/subtitle/i)).toBeDefined();
   });
 
-  test("should show the content when button is clicked", () => {
+  test("should not show the content when button is clicked a second time", () => {
     const button = screen.getByText("Open");
     fireEvent.click(button);
     fireEvent.click(button);
     expect(screen.queryByText(/subtitle/i)).toBeNull();
   });
 
-  test("children should have an h4 and a class toGrow", () => {
+  test("children should have a sectionHeader role and a toGrow class", () => {
     const button = screen.getByText("Open");
     fireEvent.click(button);
     expect(screen.getByRole("sectionHeader"));
     expect(screen.queryByText("toBottom"));
+  });
+
+  test("children should have a articleDescription role", () => {
+    const button = screen.getByText("Open");
+    fireEvent.click(button);
+    screen.getByRole("articleDescription");
   });
 });
