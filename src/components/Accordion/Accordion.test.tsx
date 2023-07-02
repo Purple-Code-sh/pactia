@@ -9,7 +9,7 @@ describe("Accordion", () => {
     render(
       <Accordion title="shm-A">
         <h4 role="sectionHeader">Subtitle</h4>
-        <div className="toBottom">
+        <div className="toGrow">
           <span>Some other content</span>
         </div>
       </Accordion>
@@ -38,7 +38,7 @@ describe("Accordion", () => {
     expect(screen.queryByText(/subtitle/i)).toBeNull();
   });
 
-  test("children should have an h4 and a class toBottom", () => {
+  test("children should have an h4 and a class toGrow", () => {
     const button = screen.getByText("Open");
     fireEvent.click(button);
     expect(screen.getByRole("sectionHeader"));

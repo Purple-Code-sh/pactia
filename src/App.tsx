@@ -7,16 +7,22 @@ export default function App() {
       <section className="welcomeSection">
         <Accordion title="More Information">
           <h3>Ofertas en tendencia</h3>
+          <div className="toGrow">
+            <div className="fromGrow">box with flexible height</div>
+          </div>
           <p>Audífonos Gamer y Accesorios para Consolas</p>
         </Accordion>
+
         <Accordion title="More Information">
           <h3>Ofertas en salud</h3>
           <p>Oferta en serums, cremas faciales y fibras capilares</p>
         </Accordion>
+
         <Accordion title="More Information">
           <h3>Descuentos en tecnologia</h3>
           <p>Electrónica, Cámaras, Fotografía y más</p>
         </Accordion>
+
         <Accordion title="Inicia sesión para vivir tu mejor experiencia">
           <p>Promoción pagada</p>
         </Accordion>
