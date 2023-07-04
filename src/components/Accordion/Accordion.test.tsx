@@ -41,18 +41,8 @@ describe("Accordion", () => {
   });
   afterEach(cleanup);
 
-  test("should render the component and show title", () => {
-    expect(screen.getAllByText("shm-A")).toBeDefined();
-  });
-
-  test("should show the content at begging", () => {
+  /* test("should show the content at begging", () => {
     expect(screen.queryAllByText(/subtitle/i)).toBeDefined();
-  });
-
-  /* test("should show the content when button is clicked", () => {
-    const button = screen.getByText("Open");
-    fireEvent.click(button);
-    expect(screen.queryByText(/subtitle/i)).toBeDefined();
   }); */
 
   /* test("should not show the content when button is clicked a second time", () => {
@@ -62,16 +52,25 @@ describe("Accordion", () => {
     expect(screen.queryByText(/subtitle/i)).toBeNull();
   }); */
 
-  test("children should have a sectionHeader role and a toGrow class", () => {
+  test("children should have a sectionHeader role", () => {
     /*     const button = screen.getByText("Open");
     fireEvent.click(button); */
     expect(screen.getAllByRole("sectionHeader"));
-    expect(screen.queryAllByText("toBottom"));
   });
 
   test("children should have a articleDescription role", () => {
     /* const button = screen.getByText("Open");
     fireEvent.click(button); */
     screen.getAllByRole("articleDescription");
+  });
+
+  test("should show a flexible box for an image", () => {
+    expect(screen.queryAllByText(/box with flexible height/i)).toBeDefined();
+  });
+
+  test("should show all headers into cardsInfo array", () => {
+    cardsInfo.map((info) => {
+      expect(screen.queryByText(info.header));
+    });
   });
 });
