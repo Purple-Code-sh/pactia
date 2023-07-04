@@ -28,7 +28,7 @@ describe("Accordion", () => {
     cardsInfo.map((element) => {
       render(
         <Accordion title="shm-A">
-          <h3 role="sectionHeader">Subtitle</h3>
+          <h3 role="sectionHeader">{element.header}</h3>
           <div className="toGrow">
             <div className="fromGrow">box with flexible height</div>
           </div>
@@ -70,7 +70,7 @@ describe("Accordion", () => {
 
   test("should show all headers into cardsInfo array", () => {
     cardsInfo.map((info) => {
-      expect(screen.queryByText(info.header));
+      expect(screen.queryAllByText(info.header));
     });
   });
 });
