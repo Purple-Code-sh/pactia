@@ -3,25 +3,7 @@ import { describe, expect, test } from "vitest"; */
 
 import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import Accordion from "./Accordion";
-
-const cardsInfo = [
-  {
-    header: "Ofertas en tendencia",
-    image: "",
-    description: "Audífonos Gamer y Accesorios para Consolas",
-  },
-  {
-    header: "Ofertas en salud",
-    image: "",
-    description: "Oferta en serums, cremas faciales y fibras capilares",
-  },
-  {
-    header: "Descuentos en tecnologia",
-    image: "",
-    description: "Electrónica, Cámaras, Fotografía y más",
-  },
-  { header: "", image: "", description: "Promoción pagada" },
-];
+import cardsInfo from "../../data/cardsInfo.json";
 
 describe("Accordion", () => {
   beforeEach(() => {
