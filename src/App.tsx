@@ -9,9 +9,15 @@ import "./App.css";
 
 export default function App() {
   const showCards = cardsInfo.map((element) => {
+    const header =
+      element.header == "" ? (
+        ""
+      ) : (
+        <h3 role="sectionHeader">{element.header}</h3>
+      );
     return (
       <Accordion title="Hide info">
-        <h3 role="sectionHeader">{element.header}</h3>
+        {header}
         <div className="toGrow">
           <div className="fromGrow">box with flexible height</div>
         </div>
