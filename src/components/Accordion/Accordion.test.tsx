@@ -15,7 +15,7 @@ describe("Accordion", () => {
             <div className="fromGrow">box with flexible height</div>
           </div>
           <div role="articleDescription">
-            <p>First description paragraph</p>
+            <p>{element.description}</p>
           </div>
         </Accordion>
       );
@@ -53,6 +53,7 @@ describe("Accordion", () => {
   test("should show all headers into cardsInfo array", () => {
     cardsInfo.map((info) => {
       expect(screen.queryAllByText(info.header));
+      expect(screen.getAllByText(info.description));
     });
   });
 });

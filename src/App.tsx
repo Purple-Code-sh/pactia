@@ -16,7 +16,7 @@ export default function App() {
           <div className="fromGrow">box with flexible height</div>
         </div>
         <div role="articleDescription">
-          <p>First description paragraph</p>
+          <p>{element.description}</p>
         </div>
       </Accordion>
     );
