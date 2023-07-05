@@ -1,27 +1,8 @@
-:root {
-  --ss-lightest: #fff2ff;
-  --ss-lighter: #ffc2c4;
-  --ss-light: #f4a9ba;
-  --ss-main: #d18f9f;
-  --ss-dark: #9e6b85;
-  --ss-darker: #5f4c67;
-  --ss-darkest: #28202b;
-
-  font-family: "Niramit", sans-serif;
-
-  /* use just weight 300 and 200 to normal font
-      200 to italic 
-      700 to bold and bold italic*/
-
-  font-weight: 300;
-
-  margin: 0px;
-  padding: 0px;
-}
+@import "./theme.css";
 
 body {
-  background-color: var(--ss-darkest);
-  color: var(--ss-lightest);
+  background-color: var(--ss-whiteBlue);
+  color: var(--ss-blackBlue);
   margin: 0px;
   padding: 0px;
 }
