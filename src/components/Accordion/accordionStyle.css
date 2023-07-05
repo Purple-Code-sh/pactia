@@ -38,3 +38,18 @@
   border: 1px solid black;
   height: 50%;
 }
+
+.card2 {
+  width: 16rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.fromGrow2 {
+  border: 1px solid black;
+  height: 100%;
+}

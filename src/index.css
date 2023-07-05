@@ -52,4 +52,11 @@ body {
   margin-top: 1.5rem;
   margin-left: 0rem;
 }
+
+.card2 {
+  background-color: var(--ss-darker);
+  font-size: 1.4ch;
+  margin-top: 1.5rem;
+  margin-left: 0rem;
+}
 /* border: 1px solid red; */

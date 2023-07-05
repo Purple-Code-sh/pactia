@@ -4,8 +4,19 @@ import "./accordionStyle.css";
 
 import type { AccordionProps } from "../../types/types";
 
-export default function Accordion({ title, children }: AccordionProps) {
+export default function Accordion({
+  title,
+  isHeader,
+  children,
+}: AccordionProps) {
   const [open, setOpen] = useState(true);
+
+  const whatChildren =
+    isHeader == true ? (
+      <div className="card ">{children}</div>
+    ) : (
+      <div className="card2 ">{children}</div>
+    );
 
   return (
     <div className="accordion">
@@ -24,7 +35,7 @@ export default function Accordion({ title, children }: AccordionProps) {
       </div>
 
       {/* If "open" state it's true show div with children */}
-      {open && <div className="card ">{children}</div>}
+      {open && whatChildren}
     </div>
   );
 }
