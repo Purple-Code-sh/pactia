@@ -1,6 +1,6 @@
 //components
 import Accordion from "./components/Accordion/Accordion";
-
+import Header from "./components/Header/Header";
 //data
 import cardsInfo from "./data/cardsInfo.json";
 
@@ -31,6 +31,7 @@ export default function App() {
   });
   return (
     <div>
+      <Header></Header>
       <section className="welcomeSection">{showCards}</section>
     </div>
   );
