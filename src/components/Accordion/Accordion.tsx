@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./accordionStyle.css";
 
-type AccordionProps = {
-  title: string;
-  children: React.ReactNode;
-};
+import type { AccordionProps } from "../../types/types";
 
 export default function Accordion({ title, children }: AccordionProps) {
   const [open, setOpen] = useState(true);
