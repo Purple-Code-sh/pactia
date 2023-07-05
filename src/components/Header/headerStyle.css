@@ -3,4 +3,5 @@
 .main {
   background-color: var(--ss-blackBlue);
   height: 4rem;
+  width: 100%;
 }
