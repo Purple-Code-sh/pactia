@@ -9,7 +9,8 @@ describe("Accordion", () => {
   beforeEach(() => {
     cardsInfo.map((element) => {
       render(
-        <Accordion title="shm-A">
+        <Accordion title="shm-A" isHeader={true}>
+          <h3 role="sectionHeader">{element.header}</h3>
           <div className="toGrow">
             <div className="fromGrow">box with flexible height</div>
           </div>
