@@ -1,4 +1,8 @@
 @import "./theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
 
 body {
   background-color: var(--ss-whiteBlue);

@@ -1,7 +1,25 @@
 @import "../../theme.css";
 
 .main {
-  background-color: var(--ss-blackBlue);
-  height: 4rem;
+  height: 2rem;
   width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  background-color: var(--ss-blackBlue);
+
+  padding: 1rem;
+}
+
+.some {
+  background-color: aliceblue;
+  width: 50%;
+}
+
+.clase2 {
+  color: blue;
+}
+.clase1 {
+  color: brown;
 }

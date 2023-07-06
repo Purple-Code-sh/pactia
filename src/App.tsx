@@ -5,12 +5,8 @@ import Header from "./components/Header/Header";
 import cardsInfo from "./data/cardsInfo.json";
 //style
 import "./App.css";
-//utilities
-import useWindowDimension from "./utilities/useWindowDimension";
 
 export default function App() {
-  const { width } = useWindowDimension();
-  const windowWidth = width.toString() + "px";
   const showCards = cardsInfo.map((element) => {
     const isHeader = element.header == "" ? false : true;
     const howGrow = element.header == "" ? "fromGrow2" : "fromGrow";
@@ -33,9 +29,13 @@ export default function App() {
     );
   });
   return (
-    <div style={{ maxWidth: windowWidth, width: windowWidth }}>
-      <Header></Header>
-      <section className="welcomeSection">{showCards}</section>
+    <div className=" max-w-full  ">
+      <div className=" w-full">
+        <Header></Header>
+      </div>
+      <section className="welcomeSection p-6 pt-0 flex justify-between flex-wrap">
+        {showCards}
+      </section>
     </div>
   );
 }
