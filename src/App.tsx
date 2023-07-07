@@ -38,4 +38,6 @@ export default function App() {
       </section>
     </div>
   );
+
+  // some app names in nahuatl: zozo, iztic, pixoa, granadia, pactia, paloa, neuh
 }
