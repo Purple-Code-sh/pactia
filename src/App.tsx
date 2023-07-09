@@ -1,6 +1,7 @@
 //components
 import Accordion from "./components/Accordion/Accordion";
 import Header from "./components/Header/Header";
+import Subheader from "./components/Subheader/Subheader";
 //data
 import cardsInfo from "./data/cardsInfo.json";
 //style
@@ -15,6 +16,9 @@ export default function App() {
     <div className=" max-w-full min-w-[936px] font-sans font-light ">
       <div className=" w-full">
         <Header></Header>
+      </div>
+      <div className=" w-full">
+        <Subheader></Subheader>
       </div>
       <div className="flex flex-wrap pl-6 py-6">{showCards}</div>
     </div>
