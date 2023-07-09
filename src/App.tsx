@@ -28,7 +28,9 @@ export default function App() {
       <div className=" w-full">
         <Header></Header>
       </div>
-      <div>{showCards}</div>
+      <div className="flex flex-wrap justify-between px-4 py-4">
+        {showCards}
+      </div>
     </div>
   );
 
