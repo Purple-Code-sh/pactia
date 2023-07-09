@@ -15,7 +15,8 @@ module.exports = {
       },
     },
     screens: {
-      desktop: "1140px",
+      desktop: "1000px",
+      minDesktop: "936px",
     },
     extend: {},
   },

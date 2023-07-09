@@ -12,13 +12,11 @@ export default function App() {
     return <Accordion header={header} description={element.description} />;
   });
   return (
-    <div className=" max-w-full  ">
+    <div className=" max-w-full  min-w-[936px] ">
       <div className=" w-full">
         <Header></Header>
       </div>
-      <div className="flex flex-wrap justify-between px-4 py-4">
-        {showCards}
-      </div>
+      <div className="flex flex-wrap pl-6 py-6">{showCards}</div>
     </div>
   );
 
