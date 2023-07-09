@@ -12,7 +12,7 @@ export default function App() {
     return <Accordion header={header} description={element.description} />;
   });
   return (
-    <div className=" max-w-full  min-w-[936px] font-light ">
+    <div className=" max-w-full min-w-[936px] font-sans font-light ">
       <div className=" w-full">
         <Header></Header>
       </div>
