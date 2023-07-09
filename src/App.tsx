@@ -9,12 +9,7 @@ import "./App.css";
 export default function App() {
   const showCards = cardsInfo.map((element) => {
     const howGrow = element.header == "" ? "fromGrow2" : "fromGrow";
-    const header =
-      element.header == "" ? (
-        ""
-      ) : (
-        <h3 role="sectionHeader">{element.header}</h3>
-      );
+    const header = element.header == "" ? "" : <h3>{element.header}</h3>;
     return (
       <Accordion
         header={header}

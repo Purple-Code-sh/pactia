@@ -1,5 +1,3 @@
-import "./accordionStyle.css";
-
 import type { AccordionProps } from "../../types/types";
 
 export default function Accordion({
