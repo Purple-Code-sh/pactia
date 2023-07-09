@@ -2,6 +2,17 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: "Niramit,Helvetica, Arial, sans-serif",
+    },
+    fontWeight: {
+      thin: 200,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+    },
     colors: {
       transparent: "transparent",
       white: "#ffffff",

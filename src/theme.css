@@ -4,15 +4,9 @@
   --ss-orange: rgba(228, 134, 49, 1);
   --ss-darkerBlue: rgba(58, 65, 92, 1);
   --ss-blackBlue: rgba(46, 48, 69, 1);
-
-  font-family: "Niramit", sans-serif;
-
   /* use just weight 300 and 200 to normal font
         200 to italic 
         700 to bold and bold italic*/
-
-  font-weight: 300;
-
   margin: 0px;
   padding: 0px;
 }
