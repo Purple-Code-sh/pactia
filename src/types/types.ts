@@ -1,9 +1,9 @@
 import React from "react";
 
 type AccordionProps = {
-  title: string;
-  isHeader: boolean;
-  children: React.ReactNode;
+  header: string | React.ReactNode;
+  howGrow: string;
+  description: string;
 };
 
 export type { AccordionProps };

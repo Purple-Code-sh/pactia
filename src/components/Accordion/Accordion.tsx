@@ -1,41 +1,21 @@
-import { useState } from "react";
-
 import "./accordionStyle.css";
 
 import type { AccordionProps } from "../../types/types";
 
 export default function Accordion({
-  title,
-  isHeader,
-  children,
+  header,
+  howGrow,
+  description,
 }: AccordionProps) {
-  const [open, setOpen] = useState(true);
-
-  const whatChildren =
-    isHeader == true ? (
-      <div className="card ">{children}</div>
-    ) : (
-      <div className="card2 ">{children}</div>
-    );
-
   return (
-    <div className="accordion">
-      <div className="cardHeader">
-        <h3>{title}</h3>
-
-        {/* If "open" state it's true show "Close" text, else show "Open" */}
-        <button
-          onClick={() => {
-            setOpen(!open);
-          }}
-          className="actionButton"
-        >
-          {open ? "Close" : "Open"}
-        </button>
+    <div className="accordion w-fit h-fit max-h-96 border border-ssTheme-orange ">
+      {header}
+      <div className="toGrow">
+        <div className={howGrow}>box with flexible height</div>
       </div>
-
-      {/* If "open" state it's true show div with children */}
-      {open && whatChildren}
+      <div role="articleDescription">
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
