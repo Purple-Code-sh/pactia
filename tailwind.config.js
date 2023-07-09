@@ -14,6 +14,9 @@ module.exports = {
         blackBlue: "rgba(46, 48, 69, 1)",
       },
     },
+    screens: {
+      desktop: "1140px",
+    },
     extend: {},
   },
   plugins: [],
