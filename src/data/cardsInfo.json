@@ -2,17 +2,20 @@
   {
     "header": "Ofertas en tendencia",
     "image": "",
-    "description": "Audífonos Gamer y Accesorios para Consolas"
+    "description": "Audífonos Gamer y Accesorios para Consolas",
+    "action": "Ver más"
   },
   {
     "header": "Ofertas en salud",
     "image": "",
-    "description": "Oferta en serums, cremas faciales y fibras capilares"
+    "description": "Oferta en serums, cremas faciales y fibras capilares",
+    "action": "Ver más ofertas"
   },
   {
     "header": "Descuentos en tecnologia",
     "image": "",
-    "description": "Electrónica, Cámaras, Fotografía y más"
+    "description": "Electrónica, Cámaras, Fotografía y más",
+    "action": "Descubre más"
   },
-  { "header": "", "image": "", "description": "Promoción pagada" }
+  { "header": "", "image": "", "description": "Promoción pagada", "action": "" }
 ]
