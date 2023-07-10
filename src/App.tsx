@@ -29,7 +29,7 @@ export default function App() {
       </div>
       <section className="w-screen h-screen text-center overflow-hidden absolute top-0 bottom-0 -z-10">
         <div
-          className="w-full h-full opacity-95"
+          className="w-full h-full opacity-80 "
           style={{
             backgroundImage: "url(" + blurBG2 + ")",
             backgroundRepeat: "no-repeat",
