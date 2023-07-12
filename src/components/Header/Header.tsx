@@ -15,9 +15,9 @@ export default function Header() {
           type="search"
           name="a"
           id=""
-          className="w-2/5 h-3/4 rounded-s-md bg-ssTheme-whiteBlue/90 text-black p-3 transition ease-in duration-300  focus:bg-white focus:outline-none focus:border-b-2  focus:border-b-ssTheme-blue "
+          className="w-2/5 h-3/4 rounded-s-md bg-ssTheme-whiteBlue/90 hover:bg-ssTheme-whiteBlue text-black p-3  focus:bg-white focus:outline-none focus:border-b-2  focus:border-b-ssTheme-blue "
         />
-        <button className="h-3/4 bg-ssTheme-blue hover:bg-ssTheme-blue2 rounded-e-md">
+        <button className="h-3/4 bg-ssTheme-blue hover:bg-ssTheme-blue2 rounded-e-md actionButton ">
           <img src={iconSearch} alt="buscar" className="h-full py-2 px-3" />
         </button>
       </div>

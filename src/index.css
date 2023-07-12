@@ -14,20 +14,14 @@ body {
 .actionButton {
   background-color: var(--ss-blue);
   color: var(--ss-blackBlue);
-  border: none;
-  border-radius: 5rem;
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  transition: all 0.7s;
+  transition: all 0.6s;
+  transition-timing-function: ease-in;
 }
 
 .actionButton:hover {
-  background-color: white;
-  border: 1px solid var(--ss-blue);
+  background-color: var(--ss-blue2);
   color: black;
-  scale: 1.1;
-  box-shadow: 0 0 0.5rem var(--ss-blue);
+  box-shadow: 0 0 0.3rem var(--ss-blue2);
   transition: all 0.03s;
+  transition-timing-function: ease-in;
 }
