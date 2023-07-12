@@ -4,6 +4,75 @@
 @tailwind utilities;
 @tailwind variants;
 
+@layer base {
+  @font-face {
+    font-family: Niramit;
+    font-weight: 700;
+    src: url("../public/fontNiramit/Niramit-Bold.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 700;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-BoldItalic.ttfs");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 600;
+    src: url("../public/fontNiramit/Niramit-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 600;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-SemiBoldItalic.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 500;
+    src: url("../public/fontNiramit/Niramit-Medium.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 500;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-MediumItalic.ttfs");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 400;
+    src: url("../public/fontNiramit/Niramit-Regular.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 400;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-Italic.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 300;
+    src: url("../public/fontNiramit/Niramit-Light.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 300;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-LightItalic.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 200;
+    src: url("../public/fontNiramit/Niramit-ExtraLight.ttf");
+  }
+  @font-face {
+    font-family: Niramit;
+    font-weight: 200;
+    font-style: italic;
+    src: url("../public/fontNiramit/Niramit-ExtraLightItalic.ttf");
+  }
+}
+
 body {
   background-color: var(--ss-whiteBlue);
   color: var(--ss-blackBlue);
@@ -24,4 +93,8 @@ body {
   box-shadow: 0 0 0.3rem var(--ss-blue2);
   transition: all 0.03s;
   transition-timing-function: ease-in;
+}
+
+.actionButton:active {
+  background-color: var(--ss-orange);
 }
