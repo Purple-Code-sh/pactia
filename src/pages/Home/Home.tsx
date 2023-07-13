@@ -1,11 +1,11 @@
 //components
-import Accordion from "../components/Accordion/Accordion";
-import Header from "../components/Header/Header";
-import Subheader from "../components/Subheader/Subheader";
+import Accordion from "../../components/Accordion/Accordion";
+import Header from "../../components/Header/Header";
+import Subheader from "../../components/Subheader/Subheader";
 //data
-import cardsInfo from "../data/cardsInfo.json";
+import cardsInfo from "../../data/cardsInfo.json";
 //style
-import blurBG2 from "../assets/blurBG2.svg";
+import blurBG2 from "../../assets/blurBG2.svg";
 
 export default function Home() {
   const showCards = cardsInfo.map((element) => {
