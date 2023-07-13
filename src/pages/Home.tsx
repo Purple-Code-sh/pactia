@@ -19,7 +19,7 @@ export default function Home() {
     );
   });
   return (
-    <div className=" max-w-full min-w-[936px] font-sans font-light ">
+    <div className=" w-full">
       <div className=" w-full z-40">
         <Header></Header>
       </div>
