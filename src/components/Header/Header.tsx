@@ -5,11 +5,15 @@ export default function Header() {
   return (
     <div className="h-16 w-full flex flex-nowrap items-center bg-ssTheme-blackBlue py-2 px-5  text-ssTheme-whiteBlue">
       <div className=" bg-ssTheme-blue h-full rounded-full flex-none">
-        <img src={logoPactia} alt="logo Pactia.com" className="h-full" />
+        <a href="#" className="h-full">
+          <img src={logoPactia} alt="logo Pactia.com" className="h-full" />
+        </a>
       </div>
-      <h1 className="text-ssTheme-whiteBlue font-bold text-3xl mx-3 pb-2">
-        Pactia
-      </h1>
+      <a href="#">
+        <h1 className="text-ssTheme-whiteBlue font-bold text-3xl mx-3 pb-2">
+          Pactia
+        </h1>
+      </a>
       <div className="w-full h-full flex-grow flex justify-center items-center ">
         <input
           type="search"

@@ -4,6 +4,7 @@
 @tailwind utilities;
 @tailwind variants;
 
+/* family font import */
 @layer base {
   @font-face {
     font-family: Niramit;
@@ -80,21 +81,42 @@ body {
   padding: 0px;
 }
 
-.actionButton {
+.actionButtonSearch {
   background-color: var(--ss-blue);
   color: var(--ss-blackBlue);
   transition: all 0.6s;
   transition-timing-function: ease-in;
 }
 
-.actionButton:hover {
+.actionButtonSearch:hover {
   background-color: var(--ss-blue2);
   color: black;
-  box-shadow: 0 0 0.3rem var(--ss-blue2);
+  box-shadow: 0 0 0.4rem var(--ss-blue2);
+  transition: all 0.03s;
+  transition-timing-function: ease-in;
+}
+
+.actionButtonSearch:active {
+  background-color: var(--ss-orange);
+  box-shadow: 0 0 0.4rem var(--ss-orange);
+}
+
+.actionButton {
+  background-color: var(--ss-blue2);
+  color: var(--ss-blackBlue);
+  transition: all 0.6s;
+  transition-timing-function: ease-in;
+}
+
+.actionButton:hover {
+  background-color: var(--ss-whiteBlue);
+  color: black;
+  box-shadow: 0 0 0.4rem var(--ss-blue2);
   transition: all 0.03s;
   transition-timing-function: ease-in;
 }
 
 .actionButton:active {
   background-color: var(--ss-orange);
+  box-shadow: 0 0 0.4rem var(--ss-orange);
 }
